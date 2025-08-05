@@ -1,0 +1,131 @@
+.richtext-content {
+    font-family: inherit;
+    color: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Headings */
+.richtext-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+.richtext-content h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+.richtext-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+.richtext-content h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+.richtext-content h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+.richtext-content h6 {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+/* Inline styles */
+.richtext-content strong {
+    font-weight: bold;
+}
+
+.richtext-content em {
+    font-style: italic;
+}
+
+.richtext-content u {
+    text-decoration: underline;
+}
+
+.richtext-content del {
+    text-decoration: line-through;
+}
+
+.richtext-content code {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+/* Lists */
+.richtext-content ul,
+.richtext-content ol {
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.richtext-content ul {
+    list-style-type: disc;
+}
+
+.richtext-content ol {
+    list-style-type: decimal;
+}
+
+.richtext-content li {
+    margin-bottom: 0.3em;
+}
+
+/* Blockquote */
+.richtext-content blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    color: #666;
+    font-style: italic;
+    margin: 1em 0;
+}
+
+/* Images */
+.richtext-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
+
+/* Horizontal Rule */
+.richtext-content hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2em 0;
+}
+
+/* Tables (optional) */
+.richtext-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.richtext-content th,
+.richtext-content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.rich-editor .ql-editor {
+    min-height: 200px;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}

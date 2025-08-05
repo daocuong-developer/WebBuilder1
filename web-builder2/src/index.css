@@ -1,0 +1,79 @@
+@import "primeicons/primeicons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-select-wrapper {
+    position: relative;
+}
+
+.custom-select-wrapper select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 2.5rem;
+}
+
+.custom-select-wrapper .select-arrow {
+    position: absolute;
+    right: 0.75rem; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Make sure clicks pass through to the select */
+    color: #6b7280; /* Tailwind gray-500 */
+}
+
+/* Base button styles */
+.btn {
+    @apply inline-flex items-center justify-center font-semibold rounded-lg;
+    /* Add default padding, colors, etc. if not handled by variant/size */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Button Sizes */
+.btn-sm {
+    @apply px-3 py-1.5 text-sm; /* Small padding, smaller text */
+}
+.btn-md {
+    @apply px-4 py-2 text-base; /* Medium padding, base text */
+}
+.btn-lg {
+    @apply px-6 py-3 text-lg; /* Large padding, larger text */
+}
+
+/* Button Variants */
+.btn-primary {
+    @apply bg-blue-600 text-white border border-transparent;
+}
+.btn-primary:hover {
+    @apply bg-blue-700;
+}
+
+.btn-secondary {
+    @apply bg-gray-200 text-gray-800 border border-transparent;
+}
+.btn-secondary:hover {
+    @apply bg-gray-300;
+}
+
+.btn-outline {
+    @apply bg-transparent text-blue-600 border border-blue-600;
+}
+.btn-outline:hover {
+    @apply bg-blue-600 text-white;
+}
+
+.btn-disabled {
+    @apply opacity-50 cursor-not-allowed;
+}
+/* === CSS CHO CÁC CỘT RESPONSIVE === */
+
+/* 1. Mặc định (cho desktop và màn hình lớn) */
