@@ -1,15 +1,12 @@
-# frontend/Dockerfile
-
-FROM node:18
-
+# Build phase
+FROM node:18 as build
 WORKDIR /app
-
-COPY package*.json ./
-
+COPY ./web-builder2/package*.json ./
 RUN npm install
+COPY ./web-builder2 .
+RUN npm run build
 
-COPY . .
-
-EXPOSE 5173
-
-CMD ["npm", "run", "dev"]
+# Nginx serve phase
+FROM nginx:alpine
+COPY --from=build /app/dist /usr/share/nginx/html
+COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf

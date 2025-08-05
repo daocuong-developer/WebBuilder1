@@ -1,11 +1,14 @@
-# backend/Dockerfile
-FROM python:3.11
+FROM python:3.10
 
+# Tạo thư mục làm việc
 WORKDIR /app
 
+# Copy file requirements trước để tận dụng cache
 COPY requirements.txt .
+
+# Cài thư viện
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy toàn bộ source vào container
 COPY . .
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
