@@ -1,0 +1,166 @@
+[
+    {
+        "model": "builder.posttemplate",
+        "pk": 1,
+        "fields": {
+            "name": "Mẫu Tin tức Cơ bản",
+            "content": {
+                "blocks": [
+                    {
+                        "id": "basic_news_heading",
+                        "type": "heading",
+                        "data": {
+                            "level": 1,
+                            "text": "Tiêu đề Tin tức Mới Nhất"
+                        }
+                    },
+                    {
+                        "id": "basic_news_intro",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Đây là đoạn giới thiệu tóm tắt về sự kiện hoặc thông tin quan trọng. Nó nên thu hút sự chú ý của độc giả."
+                        }
+                    },
+                    {
+                        "id": "basic_news_image",
+                        "type": "image",
+                        "data": {
+                            "url": "https://placehold.co/800x450/28d0b2/ffffff?text=Hinh+anh+tin+tuc",
+                            "alt": "Hình ảnh minh họa tin tức",
+                            "caption": "Ảnh minh họa cho bài viết tin tức."
+                        }
+                    },
+                    {
+                        "id": "basic_news_body",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Phần nội dung chính của bài viết. Cung cấp thông tin chi tiết, dữ liệu, và các phân tích liên quan. Bạn có thể thêm nhiều đoạn văn bản khác nhau để trình bày nội dung."
+                        }
+                    }
+                ]
+            },
+            "category": "Tin tức",
+            "tags": ["tin tức", "cơ bản", "mới"]
+        }
+    },
+    {
+        "model": "builder.posttemplate",
+        "pk": 2,
+        "fields": {
+            "name": "Mẫu Phân tích Chuyên sâu",
+            "content": {
+                "blocks": [
+                    {
+                        "id": "analysis_heading",
+                        "type": "heading",
+                        "data": {
+                            "level": 1,
+                            "text": "Phân tích Chuyên sâu: Tác động của [Chủ đề]"
+                        }
+                    },
+                    {
+                        "id": "analysis_intro",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Bài viết này sẽ đi sâu vào phân tích các khía cạnh khác nhau của [Chủ đề], cung cấp cái nhìn toàn diện."
+                        }
+                    },
+                    {
+                        "id": "analysis_subheading_1",
+                        "type": "heading",
+                        "data": {
+"level": 2,
+                            "text": "Bối cảnh và Lịch sử"
+                        }
+                    },
+                    {
+                        "id": "analysis_paragraph_1",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Khám phá nguồn gốc và sự phát triển của [Chủ đề] qua thời gian."
+                        }
+                    },
+                    {
+                        "id": "analysis_quote",
+                        "type": "quote",
+                        "data": {
+                            "text": "Một trích dẫn quan trọng từ một chuyên gia hoặc báo cáo.",
+                            "cite": "Nguồn/Chuyên gia"
+                        }
+                    },
+                    {
+                        "id": "analysis_subheading_2",
+                        "type": "heading",
+                        "data": {
+                            "level": 2,
+                            "text": "Các Tác động và Triển vọng Tương lai"
+                        }
+                    },
+                    {
+                        "id": "analysis_paragraph_2",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Phân tích những tác động hiện tại và dự đoán xu hướng trong tương lai."
+                        }
+                    }
+                ]
+            },
+            "category": "Phân tích",
+            "tags": ["phân tích", "chuyên sâu", "nghiên cứu"]
+        }
+    },
+    {
+        "model": "builder.posttemplate",
+        "pk": 3,
+        "fields": {
+            "name": "Mẫu Tin tức Ảnh/Video",
+            "content": {
+                "blocks": [
+                    {
+                        "id": "media_heading",
+                        "type": "heading",
+                        "data": {
+                            "level": 1,
+                            "text": "Khoảnh khắc Đáng Chú Ý: [Sự kiện]"
+                        }
+                    },
+                    {
+                        "id": "media_paragraph_intro",
+                        "type": "paragraph",
+                        "data": {
+                            "text": "Tổng hợp các hình ảnh và video nổi bật từ sự kiện [Sự kiện] vừa qua."
+                        }
+                    },
+                    {
+                        "id": "media_image_1",
+                        "type": "image",
+                        "data": {
+                            "url": "https://placehold.co/800x450/ff0000/ffffff?text=Anh+1",
+                            "alt": "Ảnh sự kiện 1",
+                            "caption": "Hình ảnh đầu tiên từ sự kiện."
+                        }
+                    },
+                    {
+                        "id": "media_video_1",
+"type": "video",
+                        "data": {
+                            "url": "https://www.youtube.com/embed/your_video_id_here",
+                            "caption": "Video điểm nhấn của sự kiện."
+                        }
+                    },
+                    {
+                        "id": "media_image_2",
+                        "type": "image",
+                        "data": {
+                            "url": "https://placehold.co/800x450/0000ff/ffffff?text=Anh+2",
+                            "alt": "Ảnh sự kiện 2",
+                            "caption": "Một khoảnh khắc khác đáng nhớ."
+                        }
+                    }
+                ]
+            },
+            "category": "Truyền thông",
+            "tags": ["ảnh", "video", "sự kiện", "truyền thông"]
+        }
+    }
+]
